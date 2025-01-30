@@ -10,7 +10,7 @@
 
 <body>
     <!-- Header -->
-     <header>
+     <header class="main-header">
         <h1>Kalkulator BMI</h1>
      </header>
 
@@ -28,7 +28,7 @@
 
             <!-- Form -->
             <form>
-                <div class="form-group">
+                <div class="form-group radio-group">
                     <legend>Jenis Kelamin</legend>
 
                     <input type="radio" id="pria" name="jenis-kelamin" value="Pria">
@@ -79,15 +79,25 @@
          </section>
 
          <!-- Right -->
-          <section class="result-section">
+          <section>
+            <section class="result-section">
 
-            <header><h2>Hasil</h2></header>
+                <header><h2>Hasil</h2></header>
+    
+                <div>
+                    <span id="result-bmi">0</span>
+                </div>
+    
+              </section>
 
-            <div>
-                <span id="result-BMI">0</span>
-            </div>
+              <p>Berat badan yang ideal berada pada angka 18.5 - 24.9.
+                Jika Anda memiliki hasil kurang dari 18.5, artinya Anda berada pada kategori Underweight. 
+                Jika Anda memiliki hasil 25.0 - 29.9, artinya Anda berada pada kategori Overweight.
+                Jika Anda memiliki hasil 30.0 atau lebih, artinya Anda berada pada kategori Obesitas. 
+              </p>
 
           </section>
+         
         
 
       </main>
